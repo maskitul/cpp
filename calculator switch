@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+ float a, b, hasil;
+ char aritmatika;
+
+ cout << "Selamat Datang Di Calculator Sederhana " << endl << endl;
+
+ // Input User
+ cout << "Masukan Operator + , - , x ,  / : ";
+ cin >> aritmatika;
+ cout << "Masukan Nilai Pertama = ";
+ cin >> a;
+ cout << "Masukan Nilai Kedua = ";
+ cin >> b;
+
+ // Program nya
+ switch (aritmatika)
+ {
+ case '+':
+  hasil = a + b;
+  cout << a << " + " << b << " = " << hasil << endl;
+  break;
+
+ case '-':
+  hasil = a - b;
+  cout << a << " - " << b << " = " << hasil << endl;
+  break;
+
+ case 'x':
+  hasil = a * b;
+  cout << a << " x " << b << " = " << hasil << endl;
+  break;
+
+ case '/':
+  hasil = a / b;
+  cout << a << " / " << b << " = " << hasil << endl;
+  break;
+
+ default:
+  cout << "Operator yang anda masukan tidak ada" << endl << endl;
+ }
+
+ cin.get();
+ return 0;
+}
