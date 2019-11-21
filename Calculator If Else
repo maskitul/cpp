@@ -1,39 +1,39 @@
 #include <iostream>
+
 using namespace std;
 
-int main() {
+int main()
+{
+	float a,b,hasil;
+	char aritmatika;
 
- float a, b, hasil;
- char aritmatika;
+	cout << "Selamat datang di program calculator \n \n";
 
- cout << "Selamat Datang Di Calculator Sederhana \n\n";
+	// memasukan input dari user
+	cout << "Masukan nilai pertama: ";
+	cin >> a;
+	cout << "Pilih operator +,-,/,*: ";
+	cin >> aritmatika;
+	cout << "Masukan nilai kedua: ";
+	cin >> b;
 
- // Memasukkan Input User
- cout << "Masukan Nilai Pertama = ";
- cin >> a;
- cout << "Masukan Operator + , - , x ,  / : ";
- cin >> aritmatika;
- cout << "Masukan Nilai Kedua = ";
- cin >> b;
- 
- cout << "\nHasil Perhitungan: ";
- cout << a << aritmatika << b;
+	cout << "\nHasil perhitungan: ";
+	cout << a << aritmatika << b;
 
- // Program nya
-if (aritmatika == "+") {
-    hasil = a + b;
-  } else if (aritmatika == "-"){
-    hasil = a - b;
-  } else if (aritmatika == "/"){
-    hasil = a / b;
-  } else if (aritmatika == "*"){
-    hasil = a * b;
-  } else {
-  cout << "Operator Salah" << endl;
-  }
- 
- cout << " = " << hasil << endl;
+	if (aritmatika == '+'){
+		hasil = a + b;
+	} else if (aritmatika == '-'){
+		hasil = a - b;
+	} else if (aritmatika == '/'){
+		hasil = a / b;
+	} else if (aritmatika == '*'){
+		hasil = a * b;
+	} else {
+		cout << "operator anda salah" << endl;
+	}
 
- cin.get();
- return 0;
+	cout << " = " << hasil << endl;
+
+	cin.get();
+	return 0;
 }
