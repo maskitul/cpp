@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+ float a, b, hasil;
+ char aritmatika;
+
+ cout << "Selamat Datang Di Calculator Sederhana \n\n";
+
+ // Memasukkan Input User
+ cout << "Masukan Nilai Pertama = ";
+ cin >> a;
+ cout << "Masukan Operator + , - , x ,  / : ";
+ cin >> aritmatika;
+ cout << "Masukan Nilai Kedua = ";
+ cin >> b;
+ 
+ cout << "\nHasil Perhitungan: ";
+ cout << a << aritmatika << b;
+
+ // Program nya
+if (aritmatika == "+") {
+    hasil = a + b;
+  } else if (aritmatika == "-"){
+    hasil = a - b;
+  } else if (aritmatika == "/"){
+    hasil = a / b;
+  } else if (aritmatika == "*"){
+    hasil = a * b;
+  } else {
+  cout << "Operator Salah" << endl;
+  }
+ 
+ cout << " = " << hasil << endl;
+
+ cin.get();
+ return 0;
+}
