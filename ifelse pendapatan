@@ -21,6 +21,9 @@ int main(int argc, char const *argv[])
 	total=komisi+jasa;
 	std::cout<<"Uang Jasa Rp."<<jasa<<std::endl;
 	std::cout<<"Uang Komisi Rp."<<komisi<<std::endl;
+	
+	std::cout<<"================================"<<std::endl;
+	std::cout<<"Hasil Total Rp."<<total<<std::endl;
 
 	std::cin.get();
 	return 0;
