@@ -1,0 +1,27 @@
+#include <iostream>
+
+int main(int argc, char const *argv[])
+{
+	float pendapatan, jasa, komisi, total;
+
+	std::cout<<"Pendapatan Rp. ";
+	std::cin>>pendapatan;
+	if (pendapatan>=0 && pendapatan<=200000){
+		jasa=10000;
+		komisi=0.1*pendapatan;
+	} if (pendapatan<=500000){
+		jasa=20000;
+		komisi=0.15*pendapatan;
+	} else {
+		jasa=30000;
+		komisi=0.2*pendapatan;
+	}
+
+	// Total Pendapatan
+	total=komisi+jasa;
+	std::cout<<"Uang Jasa Rp."<<jasa<<std::endl;
+	std::cout<<"Uang Komisi Rp."<<komisi<<std::endl;
+
+	std::cin.get();
+	return 0;
+}
