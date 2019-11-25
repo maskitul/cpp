@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main(){
+	double total_beli, potongan, bayar;
+	std::cout<<"Total Pembelian Dia = ";
+	std::cin>>total_beli;
+	if (total_beli>=50000){
+		potongan=0.2*total_beli;
+		std::cout<<"\nPotongan Sebesar Rp."<<potongan;
+		bayar=total_beli-potongan;
+			std::cout<<"\nJumlah Bayar Sebesar Rp."<<bayar<<std::endl;
+	}	else {
+			potongan=0.05*total_beli;
+			std::cout<<"\nPotongan Sebesar Rp."<<potongan;
+			bayar=total_beli-potongan;
+			std::cout<<"\nJumlah Bayar Sebesar Rp."<<bayar<<std::endl;
+		}
+
+	std::cout<<"PROGRAM SELESAI"<<std::endl;
+
+	std::cin.get();
+	return 0;
+}
